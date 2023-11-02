@@ -1,0 +1,39 @@
+.bingo-generator{ 
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bingo-generator > .bingo-card {
+    margin-top: 50px;
+    background-color: #fefefe;
+}
+
+.bingo-generator > .bingo-card > .title {
+    font-size: 1.2em;
+    color: #1a1a1a;
+}
+
+.bingo-generator > .bingo-card > .board {
+    color: #1a1a1a;
+    --board-size: max(calc(100vw / 3 * 0.75), calc(100vh / 4 * 0.75));
+    width: var(--board-size);
+    height: var(--board-size);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.bingo-generator > .bingo-card > .board > .cell {
+    --cell-size: calc(var(--board-size) / 5);
+    width: var(--cell-size);
+    height: var(--cell-size);
+    border: 1px solid #1a1a1a;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    text-align: center;
+}

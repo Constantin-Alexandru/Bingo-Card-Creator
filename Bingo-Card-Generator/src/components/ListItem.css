@@ -1,0 +1,29 @@
+.list-item { 
+    margin-left: 50px;
+    width: calc(75% - 50px);
+    background-color: #1a1a1a;
+    overflow: hidden;
+    align-items: center;
+    border-radius: 8px;
+    font-size: 1.2em;
+}
+
+.list-item > .list-item-index {
+    padding-left: 20px;
+}
+
+.list-item > .btn {
+    float: right;
+    height: 25px;
+    width: 25px;
+    color: #fe0000;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+    margin-right: 3px;
+    font-size: 0.8em;
+}
+
+.list-item > .btn:hover {
+    border-color: none;
+}
